@@ -1,3 +1,4 @@
-button[aria-label=Send a gift] {
-    display none;
+/*Remove Gift Button */
+button[aria-label="Send a gift"] {
+    display: none;
 }
