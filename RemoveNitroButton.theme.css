@@ -1,0 +1,11 @@
+/**
+ * @name Remove Nitro Button
+ * @author Unknown
+ * @version 1.0
+ * @description Remove the Nitro button near the emotes button.
+*/
+
+/* Hide Nitro gift button */
+button[aria-label="Send a gift"] {
+    display: none;
+}
