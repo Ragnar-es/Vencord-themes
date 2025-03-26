@@ -1,0 +1,68 @@
+/* Remove chat gift button. */
+button[aria-label="Send a gift"] {
+    display: none;
+}
+
+/* Remove Apps Launcher button. */
+button[aria-label="Apps"] {
+    display: none;
+}
+
+/* Resized Down User Area. 
+.panels_c48ade .container__37e49{
+    height: 46px;
+} */
+
+/* Aligned Chat Box and Typing indicator */
+.container_c48ade {
+  --custom-chat-input-margin-bottom: 22px;
+}
+:root {
+  --custom-channel-textarea-text-area-height: 42px;
+}
+.visual-refresh .base_b88801 {
+  font-size: 13.5px;
+  height: 22px;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Resized Server list, channels, and userlist. */
+:root {
+    --custom-channel-header-height:42px;
+    --custom-member-list-width:220px;
+    --custom-guild-list-width:64px;
+    --custom-guild-list-padding:8px;
+}
+
+/* Round icons */
+.icon_f34534.guildIcon__48112 { 
+  border-radius: 50% !important 
+}
+[class*="guildIcon_"], [class*="icon_"]:not(.icon__0ccae) {
+  border-radius: 50% !important;
+}
+.visual-refresh {
+  --g-48-r: calc(var(--guildbar-avatar-size)* 50 / 40);
+}
+
+
+/* Resized Chat Bar Buttons */
+.visual-refresh .scrollerInner__36d07 {
+    padding-bottom: 5px;
+}
+.visual-refresh .button__74017,.buttonContents_e6e74f:not([class*="enabled__67645"]) {
+    transform: scale(1.25) !important;
+}
+.visual-refresh .spriteContainer__04eed {
+   transform: scale(1.1) !important;
+}
+
+/* Detailed Timestamps */
+span[class*="timestampInline_"] time::before {
+  content: attr(aria-label);
+  font-size: 12px;
+}
+span[class*="timestampInline_"] {
+  font-size: 0px !important;
+}
