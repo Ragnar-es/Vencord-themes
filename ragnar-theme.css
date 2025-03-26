@@ -21,6 +21,10 @@ button[aria-label="Apps"] {
     display: none;
 }
 
+/* Remove GIF alt text footer */
+.altText__0f481 {
+    display: none;
+}
 /* Resized Down User Area. 
 .panels_c48ade .container__37e49{
     height: 46px;
