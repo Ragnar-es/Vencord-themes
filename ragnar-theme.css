@@ -85,7 +85,7 @@ span[class*="timestampInline_"] {
         }
 
         .svg_cc5dd2:not(.folderIcon__48112 .svg_cc5dd2) > mask :nth-child(2) {
-            transform: translate(7px, 1px);
+            transform: translate(7px, 7px);
         }
 
         .svg_cc5dd2 {
