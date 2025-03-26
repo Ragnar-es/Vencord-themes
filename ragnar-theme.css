@@ -68,3 +68,52 @@ span[class*="timestampInline_"] {
 }
 
 /* Original Server List Design */
+.visual-refresh {
+    --guildbar-avatar-size: 48px;
+
+    .listItem__650eb {
+        defs > path {
+            d: path("M 0 0 H 200 V 200 H 0 Z");
+        }
+
+        .childWrapper__6e9f8,
+        .icon__6e9f8,
+        .icon_f34534,
+        .circleIconButton__5bc7e {
+            border-radius: 100% !important;
+        }
+
+        .svg_cc5dd2:not(.folderIcon__48112 .svg_cc5dd2) > mask {
+            use[href$="-lower_badge_masks"] {
+                transform: translate(8px, 8px);
+            }
+            use[href$="-upper_badge_masks"] {
+                transform: translate(8px, 0px);
+            }
+        }
+
+        .svg_cc5dd2 {
+            top: 0px;
+            left: 0px;
+
+            foreignObject {
+                width: var(--guildbar-avatar-size);
+                height: var(--guildbar-avatar-size);
+                transform: translate(-4px, -4px);
+            }
+        }
+    }
+
+    .stack_dbd263 >
+    div:not([class]):has(.listItem__650eb) {
+        height: 48px !important;
+    }
+
+    .isExpanded__48112 .stack_dbd263 {
+        height: auto !important;
+    }
+}
+
+.expandedFolderBackground__48112 {
+    width: 52px;
+}
