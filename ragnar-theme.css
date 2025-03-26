@@ -1,3 +1,11 @@
+/**
+ * @name Ragnar's Theme
+ * @author Ragnar
+ * @version 1.0.0
+ * @description Just some QOL improvements.
+ * @source https://github.com/Ragnar-es/VencordThemes/
+*/
+
 /* Remove chat gift button. */
 button[aria-label="Send a gift"] {
     display: none;
