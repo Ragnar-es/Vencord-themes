@@ -84,8 +84,13 @@ span[class*="timestampInline_"] {
             border-radius: 100% !important;
         }
 
-        .svg_cc5dd2:not(.folderIcon__48112 .svg_cc5dd2) > mask :nth-child(2) {
-            transform: translate(7px, 7px);
+        .svg_cc5dd2:not(.folderIcon__48112 .svg_cc5dd2) > mask {
+            use[href$="-lower_badge_masks"] {
+                transform: translate(8px, 8px);
+            }
+            use[href$="-upper_badge_masks"] {
+                transform: translate(8px, 0px);
+            }
         }
 
         .svg_cc5dd2 {
