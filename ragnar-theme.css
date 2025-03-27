@@ -6,6 +6,8 @@
  * @source https://github.com/Ragnar-es/VencordThemes/
 */
 
+/* Remove title bar */
+@import url('https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/desktop.css');
 /* Remove chat gift button. */
 button[aria-label="Send a gift"] {
     display: none;
