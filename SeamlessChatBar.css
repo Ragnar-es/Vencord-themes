@@ -25,6 +25,7 @@
   }
   /* slowmode bar + typing indicator */
   .base_b88801 {
+    font-size: 13.5px;
     border-color: transparent !important;
     position: static;
     order: -1;
