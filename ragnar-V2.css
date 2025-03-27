@@ -168,3 +168,9 @@ div[class^=sidebar_] nav[class^=wrapper_]{
 .auto_d125d2::-webkit-scrollbar-thumb {
     background-color: #ffffff11;
 }
+
+/* Remove Help Button */
+[href="https://support.discord.com"] { display: none; }
+:root {
+  --vr-header-snippet-space: 132px !important;
+}
