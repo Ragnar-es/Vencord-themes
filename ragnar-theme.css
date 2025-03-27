@@ -25,10 +25,6 @@ button[aria-label="Apps"] {
 .altText__0f481 {
     display: none;
 }
-/* Resized Down User Area. 
-.panels_c48ade .container__37e49{
-    height: 46px;
-} */
 
 /* Aligned Chat Box and Typing indicator */
 .container_c48ade {
@@ -148,4 +144,25 @@ span[class*="timestampInline_"] {
 
 .expandedFolderBackground__48112 {
     width: 52px;
+}
+
+/* Remove Activity Cards Menu */
+[class*='membersGroup']:has([role=button]),
+[class*='member'] [class*='container']:has([class*='badges']) {
+  display: none;
+}
+
+/* Custom User Area */
+.visual-refresh [class^="panels_"] {
+    border-radius: 9;
+    left: calc(var(--custom-guild-list-width) + 6px);
+    bottom: 9px;
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 10px);
+}
+div[class^=sidebar_] nav[class^=wrapper_]{
+  margin-bottom: unset!important;
+}
+
+.visual-refresh .sidebar_c48ade:after {
+    display:none;
 }
