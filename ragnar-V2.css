@@ -145,7 +145,6 @@ span[class*="timestampInline_"] {
 
 /* Custom User Area */
 .visual-refresh [class^="panels_"] {
-	height: 54px;
     border-radius: 9;
     left: calc(var(--custom-guild-list-width) + 6px);
     bottom: 9px;
@@ -168,10 +167,4 @@ div[class^=sidebar_] nav[class^=wrapper_]{
 /* Scrollbar Color Opacity */
 .auto_d125d2::-webkit-scrollbar-thumb {
     background-color: #ffffff11;
-}
-
-/* Remove Help Button */
-[href="https://support.discord.com"] { display: none; }
-:root {
-  --vr-header-snippet-space: 132px !important;
 }
