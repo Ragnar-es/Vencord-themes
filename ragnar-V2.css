@@ -174,3 +174,13 @@ div[class^=sidebar_] nav[class^=wrapper_]{
 :root {
   --vr-header-snippet-space: 132px !important;
 }
+
+/* Remove scrollbar from channel and user list */
+:root {
+    --scrollbar-thin-thumb: display: none !important;
+}
+
+/* Fix Threads Close Button */
+:root {
+    --vr-header-snippet-space: 180px !important;
+}
