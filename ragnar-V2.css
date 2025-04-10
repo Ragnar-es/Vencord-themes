@@ -184,3 +184,12 @@ div[class^=sidebar_] nav[class^=wrapper_]{
 :root {
     --vr-header-snippet-space: 180px !important;
 }
+
+/* Increases Folder Icon Size */
+[class*=expandedFolderIconWrapper__] {
+    svg {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 1px;
+    }
+}
