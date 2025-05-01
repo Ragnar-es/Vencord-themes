@@ -111,3 +111,24 @@ div[class^=sidebar_] nav[class^=wrapper_]{
 :root {
     --vr-header-snippet-space: 180px !important;
 }
+
+/* Voice Channel User count better design*/
+.visual-refresh {
+    .users__260e1,
+    .total__260e1 {
+        display: flex;
+        justify-content: center;
+        font-variant-numeric: normal;
+    }
+
+    .users__260e1 {
+        padding: 0 6px 0 3px;
+        margin-left: 1px;
+    }
+
+    .total__260e1 {
+        padding: 1px 4px 0 0;
+    }
+    
+    .wrapper__260e1 { border: none; }
+}
