@@ -9,7 +9,8 @@
 
 /* Remove title bar & Seamless Chat Bar */
 @import url('https://raw.githubusercontent.com/Ragnar-es/Vencord-themes/refs/heads/main/Remove_Title_Bar.css');
-@import url("https://raw.githubusercontent.com/Ragnar-es/Vencord-themes/refs/heads/main/SeamlessChatBar.css");
+@import url('https://raw.githubusercontent.com/Ragnar-es/Vencord-themes/refs/heads/main/SeamlessChatBar.css');
+@import url('https://raw.githubusercontent.com/Ragnar-es/Vencord-themes/refs/heads/main/GuildbarRevert.css');
 
 /* Remove chat gift button. */
 button[aria-label="Send a gift"] {
@@ -31,27 +32,16 @@ button[aria-label="Apps"] {
     display: none;
 }
 
-/* Resized Server list, channels, and userlist. */
+/* Resized Server list width, and userlist width. */
 :root {
-    --custom-channel-header-height:42px;
     --custom-member-list-width:220px;
-    --custom-guild-list-width:64px;
-    --custom-guild-list-padding:6px;
-    --padding-users-custom:6px !important;
-    --padding-total-custom:1px !important;
-    --top-left-corner:0px !important;
+	--custom-guild-list-padding: 8px !important;
 }
-.wrapper__260e1 {
-    border-radius: 10px !important;
-}
-.visual-refresh .users__260e1 {
-    padding-left: var(--padding-users-custom);
-}
-.visual-refresh .total__260e1 {
-    padding-left: var(--padding-total-custom);
-}
-.sidebarListRounded_c48ade {
-    border-top-left-radius: var(--top-left-corner) !important;
+
+span[class*="folderGroupBackground__"] {
+	width: 54px !important;
+	left: 5px !important;
+	top: -3px !important;
 }
 
 /* Round icons */
@@ -84,57 +74,6 @@ span[class*="timestampInline_"] time::before {
 }
 span[class*="timestampInline_"] {
   font-size: 0px !important;
-}
-
-/* Original Server List Design */
-.visual-refresh {
-    --guildbar-avatar-size: 48px;
-
-    .listItem__650eb {
-        defs > path {
-            d: path("M 0 0 H 200 V 200 H 0 Z");
-        }
-
-        .childWrapper__6e9f8,
-        .icon__6e9f8,
-        .icon_f34534,
-        .circleIconButton__5bc7e {
-            border-radius: 100% !important;
-        }
-
-        .svg_cc5dd2:not(.folderIcon__48112 .svg_cc5dd2) > mask {
-            use[href$="-lower_badge_masks"] {
-                transform: translate(8px, 8px);
-            }
-            use[href$="-upper_badge_masks"] {
-                transform: translate(8px, 0px);
-            }
-        }
-
-        .svg_cc5dd2 {
-            top: 0px;
-            left: 0px;
-
-            foreignObject {
-                width: var(--guildbar-avatar-size);
-                height: var(--guildbar-avatar-size);
-                transform: translate(-4px, -4px);
-            }
-        }
-    }
-
-    .stack_dbd263 >
-    div:not([class]):has(.listItem__650eb) {
-        height: 48px !important;
-    }
-
-    .isExpanded__48112 .stack_dbd263 {
-        height: auto !important;
-    }
-}
-
-.expandedFolderBackground__48112 {
-    width: 52px;
 }
 
 /* Remove Activity Cards Menu */
@@ -183,13 +122,4 @@ div[class^=sidebar_] nav[class^=wrapper_]{
 /* Fix Threads Close Button */
 :root {
     --vr-header-snippet-space: 180px !important;
-}
-
-/* Increases Folder Icon Size */
-[class*=expandedFolderIconWrapper__] {
-    svg {
-  width: 25px;
-  height: 25px;
-  margin-bottom: 1px;
-    }
 }
