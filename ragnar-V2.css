@@ -44,18 +44,6 @@ span[class*="folderGroupBackground__"] {
 	top: -3px !important;
 }
 
-/* Round icons */
-.icon_f34534.guildIcon__48112 { 
-  border-radius: 50% !important 
-}
-[class*="guildIcon_"], [class*="icon_"]:not(.icon__0ccae) {
-  border-radius: 50% !important;
-}
-.visual-refresh {
-  --g-48-r: calc(var(--guildbar-avatar-size)* 50 / 40);
-}
-
-
 /* Resized Chat Bar Buttons */
 .visual-refresh .scrollerInner__36d07 {
     padding-bottom: 5px;
